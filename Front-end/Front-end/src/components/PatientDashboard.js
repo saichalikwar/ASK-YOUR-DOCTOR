@@ -14,6 +14,8 @@ class PatientDashboard extends Component {
         this.loadPatient = this.loadPatient.bind(this);
         this.updatePatient = this.updatePatient.bind(this);
     }
+    
+    
 
     componentDidMount() {
         if (sessionStorage.getItem("role") == null || sessionStorage.getItem("role") !== "patient") {
